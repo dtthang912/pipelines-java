@@ -30,6 +30,6 @@ steps:
   displayName: copy file
   inputs:
     Contents: |
-      pipelines-java\pom.xml
+      pom.xml
     TargetFolder: '$(Common.TestResultsDirectory)'
 
