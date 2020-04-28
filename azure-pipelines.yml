@@ -32,4 +32,8 @@ steps:
     Contents: |
       **/pom.xml
     TargetFolder: '$(Common.TestResultsDirectory)'
+- task: PublishBuildArtifacts@1
+  inputs:
+    pathToPublish: $(Common.TestResultsDirectory)
+    artifactName: Thang-Artifact
 
